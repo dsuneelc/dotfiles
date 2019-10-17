@@ -1,0 +1,37 @@
+set virtualedit=onemore
+set relativenumber number
+inoremap jj <ESC>
+nnoremap th :tabfirst<CR>
+nnoremap tj :tabnext<CR>
+nnoremap tk :tabprev<CR>
+nnoremap tl :tablast<CR>
+nnoremap tt :tabedit
+nnoremap tm :tabm<CR>
+nnoremap td :tabclose<CR>
+"color desert
+syntax on
+set tabstop=4
+" Enable case folding in python, press za to fold
+set foldmethod=indent
+set foldlevel=99
+" Enable folding with a spacebar
+nnoremap <space> za
+" search starts from the first typing character and it is refined as we type the
+" full string
+:set incsearch
+" highlight the search
+:set hlsearch
+" for C type indentation
+:set cindent
+:set textwidth=120
+:iabbrev #h ------------------------------------------------------------------------------------------------------------------------
+:iabbrev #l <space>------------------------------------------------------------------------------------------------------------------------
+:iabbrev #b ------------------------------------------------------------------------------------------------------------------------
+" :abbreviate is for both insert and command mode, :iabbrev is only for insert
+" mode, :cabbrev is only for command mode, :abbreviate command lists the
+" abbreviations
+set mouse=a
+" enables mouse in vim
+imap <C-n> <ESC>:action HippieCompletion<CR>a
+imap <C-p> <ESC>:action HippieBackwardCompletion<CR>a
+
