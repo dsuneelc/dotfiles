@@ -12,4 +12,4 @@ then
 fi
 
 # Extensions to be installed
-npm install coc-snippets coc-python coc-json coc-yaml coc-explorer coc-vimlsp --global-style --ignore-scripts --no-bin-links --no-package-lock --only=prod
+npm install coc-snippets coc-pyright coc-json coc-yaml coc-explorer coc-vimlsp --global-style --ignore-scripts --no-bin-links --no-package-lock --only=prod
