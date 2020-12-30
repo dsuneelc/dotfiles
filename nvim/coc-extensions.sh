@@ -6,7 +6,8 @@ set -o errexit  # exit when command fails
 # Install extensions
 mkdir -p ~/.config/coc/extensions
 cd ~/.config/coc/extensions
-if [ ! -f package.json ] then
+if [ ! -f package.json ] 
+then
     echo '{"dependencies": {}}' > package.json
 fi
 
