@@ -56,7 +56,7 @@ inoremap <C-k> <C-\><C-N><C-w>k
 inoremap <C-l> <C-\><C-N><C-w>l
 tnoremap <ESC> <C-\><C-n>
 
-" Adjusting split sizes, Alt + hjkl
+" Adjusting split sizes, Ctrl + hjkl
 nnoremap <silent> <C-Left> :vertical resize +3<CR>
 nnoremap <silent> <C-Right> :vertical resize -3<CR>
 nnoremap <silent> <C-Up> :resize +3<CR>
