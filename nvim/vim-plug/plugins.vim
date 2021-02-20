@@ -21,4 +21,7 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     Plug 'vim-airline/vim-airline'
     Plug 'vim-airline/vim-airline-themes'
     Plug 'ryanoasis/vim-devicons'
+    Plug 'KKPMW/vim-sendtowindow'
+    Plug 'tpope/vim-surround'
+    Plug 'mhinz/vim-startify'
 call plug#end()
