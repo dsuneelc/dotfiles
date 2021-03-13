@@ -24,4 +24,5 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     Plug 'KKPMW/vim-sendtowindow'
     Plug 'tpope/vim-surround'
     Plug 'mhinz/vim-startify'
+    Plug 'iamcco/markdown-preview.nvim', { 'do': { -> mkdp#util#install() }, 'for': ['markdown', 'vim-plug']}
 call plug#end()
