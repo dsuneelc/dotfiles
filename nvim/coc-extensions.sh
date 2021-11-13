@@ -14,5 +14,5 @@ fi
 # Extensions to be installed
 npm install \
     coc-snippets coc-pyright coc-json coc-yaml coc-explorer \
-    coc-vimlsp coc-prettier\
+    coc-vimlsp coc-prettier \
     --global-style --ignore-scripts --no-bin-links --no-package-lock --only=prod

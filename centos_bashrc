@@ -1,0 +1,54 @@
+# .bashrc
+
+# Source global definitions
+if [ -f /etc/bashrc ]; then
+	. /etc/bashrc
+fi
+
+# User specific environment
+PATH="$HOME/.local/bin:$HOME/bin:$PATH"
+export PATH
+
+# Uncomment the following line if you don't like systemctl's auto-paging feature:
+# export SYSTEMD_PAGER=
+
+# User specific aliases and functions
+
+# >>> conda initialize >>>
+# !! Contents within this block are managed by 'conda init' !!
+__conda_setup="$('/home/suneel/miniconda3/bin/conda' 'shell.bash' 'hook' 2> /dev/null)"
+if [ $? -eq 0 ]; then
+    eval "$__conda_setup"
+else
+    if [ -f "/home/suneel/miniconda3/etc/profile.d/conda.sh" ]; then
+        . "/home/suneel/miniconda3/etc/profile.d/conda.sh"
+    else
+        export PATH="/home/suneel/miniconda3/bin:$PATH"
+    fi
+fi
+unset __conda_setup
+# <<< conda initialize <<<
+
+export LS_COLORS=$LS_COLORS:'tw=00;34':'ow=00;34'
+alias vim=nvim
+alias projects="cd /mnt/hgfs/others/Google\ Drive/Code/projects"
+# Kubenetes configuration
+## Bash auto-completion
+source <(kubectl completion bash) # source <(kubectl completion zsh)
+## Aliases
+alias k="kubectl"
+alias kcf='kubectl create -f'
+alias kaf='kubectl apply -f'
+alias kgp='kubectl get pods'
+alias kgpa='kubectl get pods --all-namespaces'
+alias kgd='kubectl get deployments'
+alias kgs='kubectl get service'
+alias kgh='kubectl get hpa'
+alias kd='kubectl delete'
+alias kdp='kubectl delete pods'
+alias kdd='kubectl delete deployments'
+alias kds='kubectl delete service'
+
+##  For auto-completion after typing k
+complete -F __start_kubectl k
+
